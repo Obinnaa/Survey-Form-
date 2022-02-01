@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
     line-height: 1.5em;
 }
 body::before {
@@ -31,9 +30,12 @@ header {
     margin: 40px;
     color: #eee;
 }
-header h1 {
+#title {
     font-size: 1.5em;
     font-weight: 550;
+}
+#description {
+    font-size: 16px;
 }
 #survey-form {
     width: 50%;
@@ -41,6 +43,7 @@ header h1 {
     padding: 30px;
     background-color:  #1b1b32cc;
     color: #eee;
+    font-size: 18px;
 }
 label {
     display: flex;
@@ -55,9 +58,10 @@ label {
     padding: 10px;
     border: 1px solid #04041a;
     border-radius: 5px;
+    font-size: inherit;
 }
 .small{
-    font-size: 12px;
+    font-size: 11px;
 }
 [type="checkbox"], [type="radio"] {
     margin: 8px;
@@ -71,6 +75,7 @@ textarea {
     margin-top: 0px;
     padding: 10px;
     resize: vertical;
+    font-size: inherit;
 }
 button {
     width: 100%;
@@ -80,5 +85,29 @@ button {
     background-color:#37af65;
     color: #eee;
     cursor: pointer;
+    font-size: inherit;
 }
 
+/* Responsivenss */
+@media (max-width: 502px) {
+    #survey-form {
+        width: 100%;
+    }
+    #title {
+        font-size: 0.5em;
+    }
+    #description {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    #survey-form {
+        width: 80%;
+    }
+    #title {
+        font-size: 1.49em;
+    }
+    #description {
+        font-size: 16px;
+    }
+}
