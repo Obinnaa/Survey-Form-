@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #04041a;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58,58,158,0.8),
+        rgba(58,58,158,0.8)
+    ),
+
+    url("/images/survey-form-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header {
+    text-align: center;
+    margin: 40px;
+    color: #eee;
+}
+header h1 {
+    font-size: 1.5em;
+    font-weight: 550;
+}
+#survey-form {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background-color:  #1b1b32cc;
+    color: #eee;
+}
+label {
+    display: flex;
+    align-items: center;
+}
+.form-control {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #04041a;
+    border-radius: 5px;
+}
+.small{
+    font-size: 12px;
+}
+[type="checkbox"], [type="radio"] {
+    margin: 8px;
+}
+.quest {
+    margin: 10px 0px 10px 0px;
+}
+textarea {
+    width: 100%;
+    min-height: 160px;
+    margin-top: 0px;
+    padding: 10px;
+    resize: vertical;
+}
+button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    background-color:#37af65;
+    color: #eee;
+    cursor: pointer;
+}
+
